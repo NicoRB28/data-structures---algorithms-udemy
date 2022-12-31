@@ -1,5 +1,14 @@
 package com.data.structures.and.algorithms.udemy.backtracking;
 
+/**
+ * time O(2^n²)
+ * N steps in x direction and N steps in Y direction,
+ * there are 2 branches because the 2 recursive calls
+ * and there will be n recursive calls.
+ *
+ * Space O(n²)
+ * because we use two matrix
+ */
 public class RatInAMaze {
     public static void main(String[] args) {
         int[][] maze = {{1, 1, 0, 0},
