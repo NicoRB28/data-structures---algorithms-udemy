@@ -10,6 +10,10 @@ package com.data.structures.and.algorithms.udemy.backtracking;
  *  the knight can move to a cell only once.
  *  the knight can not move outside the matrix.
  *
+ * Complexity:
+ *  O(8^n²)
+ * space:
+ *  O(n^2)
  */
 public class KnightTour {
     // Choices
