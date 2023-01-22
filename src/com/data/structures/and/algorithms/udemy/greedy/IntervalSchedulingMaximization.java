@@ -20,6 +20,7 @@ public class IntervalSchedulingMaximization {
                 {11, 16},
                 {12, 14},
                 {16, 20},
+                {23, 30}
         };
         List<int[]> optimalSchedule = schedule(intervals);
         for (int[] is : optimalSchedule) {
