@@ -34,7 +34,7 @@ public class Staircase {
         for (int i = 1; i <= end; i++) {
             memoization[i] = 0;
             for (int j = 1; j <= stepSize; j++) {
-                if (i - j >= 0){
+                if (i - j >= 0) {
                     memoization[i] = memoization[i] + memoization[i - j];
                 }
             }
@@ -53,7 +53,7 @@ public class Staircase {
 
         memoization[end] = 0;
 
-        for (int i = 1; i <= stepSize; i++ ) {
+        for (int i = 1; i <= stepSize; i++) {
             memoization[end] = memoization[end] + numberOfWays(end - i, stepSize, memoization);
         }
         return memoization[end];
